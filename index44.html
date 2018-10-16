@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>	
+<body>
+  <script> 
+        var a = prompt ('Введите значение a: ');
+		var b = prompt ('Введите значение b: ');
+		var c = prompt ('Введите значение c: ');
+ function calcD(a, b, c) {
+
+		if (isNaN(a) || isNaN(b) || isNaN(c) || a==' ' || b==' ' || c==' ')
+		alert ('Введено неправильное число');
+
+     return b * b - 4 * a * c; 
+ }
+var discriminant = calcD(a, b, c);
+alert('D=' + discriminant + ' Если дискриминант отрицательный, то решений нет. Если положительный, то у вас все хорошо');
+</script> 
+</body>
+</html>

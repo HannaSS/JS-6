@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>	
+<body>
+  <script> 
+function checkAge(age) {
+  if (age > 17) {
+    return true;
+  } else {
+    return confirm('Родители разрешили?');
+  }
+}
+let age = prompt('Ваш возраст?', 18);
+
+if ( checkAge(age) ) {
+  alert( 'Доступ разрешен' );
+ }  else {
+  alert( 'В доступе отказано' );
+}
+
+//if (isNaN(age) || age==' ' || age < 0 || age > 120)
+//alert ('Введено неправильное число. Введите ваш возраст');
+
+</script> 
+</body>
+</html>
