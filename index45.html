@@ -4,6 +4,7 @@
 </head>	
 <body>
   <script> 
+
 function checkAge(age) {
   if (age > 17) {
     return true;
@@ -13,15 +14,15 @@ function checkAge(age) {
 }
 let age = prompt('Ваш возраст?', 18);
 
-if ( checkAge(age) ) {
+if (isNaN(age) || age==' ' || age < 0 || age > 120) {
+alert ('Введено неправильное число. Введите ваш возраст');
+}
+else if ( checkAge(age) ) {
   alert( 'Доступ разрешен' );
- }  else {
+  }
+ else {
   alert( 'В доступе отказано' );
 }
-
-//if (isNaN(age) || age==' ' || age < 0 || age > 120)
-//alert ('Введено неправильное число. Введите ваш возраст');
-
 </script> 
 </body>
 </html>
